@@ -1,0 +1,23 @@
+body{
+    display: grid;
+    grid-template-columns: 100px 1fr 140px;
+    grid-template-areas:
+        "head head head"
+        "menu main messenger";
+}
+    header{
+        grid-area: head;
+        background-color: gray;
+    }
+    aside{
+        background-color:blue ;
+    }
+    .menu{
+        grid-area: menu;
+    }
+    .messenger{
+        grid-area: messenger;
+    }
+    main{
+        grid-area: main;
+    }
