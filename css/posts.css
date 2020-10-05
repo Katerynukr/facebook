@@ -31,6 +31,19 @@
     .post > div {
 
     }
+        .post > div > p {
+            padding: 10px;
+        }
+        .big-font{
+            font-size: 30px;
+        }
+        .see-more{
+            cursor: pointer;
+            color: #36f;
+        }
+        .see-more:hover{
+            text-decoration: underline;
+        }
     .post > footer {
 
     }
