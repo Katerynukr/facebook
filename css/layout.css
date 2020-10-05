@@ -3,21 +3,22 @@ body{
     grid-template-columns: 100px 1fr 140px;
     grid-template-areas:
         "head head head"
-        "menu main messenger";
+        "menu feed msg";
 }
-    header{
+    body > header{
         grid-area: head;
         background-color: gray;
     }
-    aside{
+    body > aside{
         background-color:blue ;
     }
     .menu{
         grid-area: menu;
     }
     .messenger{
-        grid-area: messenger;
+        grid-area: msg;
     }
-    main{
-        grid-area: main;
+    body > main{
+        grid-area: feed;
+        padding: 40px;
     }
