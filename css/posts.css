@@ -34,16 +34,32 @@
         .post > div > p {
             padding: 10px;
         }
-        .big-font{
-            font-size: 30px;
-        }
-        .see-more{
-            cursor: pointer;
-            color: #36f;
-        }
-        .see-more:hover{
-            text-decoration: underline;
-        }
+            .post > div > p.hidden {
+                display: none;
+            }
+            .post > div.show > p {
+                display: none;
+            }
+            .post > div.show > p.hidden {
+                display: inline-block;
+            }
+            .big-font{
+                font-size: 30px;
+            }
+            .see-more{
+                cursor: pointer;
+                color: #36f;
+            }
+            .see-more:hover{
+                text-decoration: underline;
+            }
+            .see-less{
+                cursor: pointer;
+                color: #36f;
+            }
+            .see-less:hover{
+                text-decoration: underline;
+            }
     .post .gallery{
         display: inline-block;
         width: 100%;
