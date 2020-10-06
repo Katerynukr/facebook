@@ -22,6 +22,34 @@ function renderPosts(data){
 
     feedDOM.innerHTML = HTML;
 
+    //Puting interaction on elements
+    const allSeeMoreDOM =   document.querySelectorAll(".post .see-more");
+
+    //Looping through each found see-more element to add class
+    for (let i = 0; i < allSeeMoreDOM.length; i++){
+        const seeMore = allSeeMoreDOM[i];
+
+        seeMore.addEventListener('click', function () {
+            //finding closed father element .content
+            const contentDOM = seeMore.closest('.content');
+            //adding class on the element
+            contentDOM.classList.toggle('show');
+        });
+    }
+
+    // //Looping through each found see-more element to remove class
+    // for (let j = 0; j < allSeeMoreDOM.length; j++){
+    //     const seeMore = allSeeMoreDOM[j];
+
+    //     seeMore.addEventListener('click', function () {
+    //         //finding closed father element .content
+    //         const contentDOM = seeMore.closest('.content');
+    //         //adding class on the element
+    //         contentDOM.classList.remove('show');
+    //     });
+    // }
+    
+
 } 
 
 export default renderPosts;

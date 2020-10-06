@@ -6,25 +6,28 @@ function renderContentGallery(photoArray) {
     }
 
     //logic
-    const maxGallerySize = 3;
-    const printablePhotosCount = photoArray.length > maxGallerySize ? maxGallerySize : photoArray.length;
-    console.log(photoArray);
+    const maxGallerySize = 4;
+    const photoCount = photoArray.length;
+    const printablePhotosCount = photoCount > maxGallerySize ? maxGallerySize : photoCount;
 
     //generating only needed amount of images
     let extraHTML = '';
-    if(photoArray.length > maxGallerySize){
-        extraHTML = `data-extra = "${photoArray.length - maxGallerySize}"`;
+    if(photoCount > maxGallerySize){
+        extraHTML = `data-extra = "${photoCount - maxGallerySize}"`;
     }
 
     let photosHTML = '';
     for(let i = 0; i < printablePhotosCount; i++){
         if(i < printablePhotosCount - 1) {
-            photosHTML += `<img src="./img/posts/${photoArray[i]}"
-            alt="User post gallery picture">`;
+            photosHTML += `<div class="img">
+                                <img src="./img/posts/${photoArray[i]}"
+                                alt="User post gallery picture">
+                            </div>`;
         } else {
-            photosHTML += `<img src="./img/posts/${photoArray[i]}"
-                        alt="User post gallery picture"
-                        ${extraHTML}>`;
+            photosHTML += `<div class="img" ${extraHTML}>
+                                <img src="./img/posts/${photoArray[i]}"
+                                alt="User post gallery picture">
+                            </div>`;
         }   
     }
     return `<div class="gallery gallery-${printablePhotosCount}">
