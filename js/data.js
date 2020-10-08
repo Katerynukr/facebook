@@ -14,6 +14,7 @@ const posts = [
     //     }
     // },
     {
+        id: 1,
         author: {
             photo: 'chuck-norris.jpg',
             name: 'Chuck',
@@ -26,6 +27,7 @@ const posts = [
         }
     },
     {
+        id: 2,
         author: {
             photo: 'algimantas-cekuolis.jpg',
             name: 'Algimantas',
@@ -38,6 +40,7 @@ const posts = [
         }
     },
     {
+        id: 3,
         author: {
             photo: 'algimantas-cekuolis.jpg',
             name: 'Algimantas',
@@ -50,6 +53,7 @@ const posts = [
         }
     },
     {
+        id: 4,
         author: {
             photo: 'harley-quinn.jpg',
             name: 'Harley',
@@ -63,6 +67,7 @@ const posts = [
         }
     },
     {
+        id: 5,
         author: {
             photo: 'jackie-chan.jpg',
             name: 'Jackie',
@@ -78,6 +83,7 @@ const posts = [
         }
     },
     {
+        id: 6,
         author: {
             photo: 'bruce-lee.jpg',
             name: 'Bruce',
@@ -94,13 +100,14 @@ const posts = [
         }
     },
     {
+        id: 7,
         author: {
             photo: 'bruce-willis.jpg',
             name: 'Bruce',
             lastname: 'Willis',
             link: 'bruce-willis'
         },
-        postTimestamp: 1595098805222,             // miliseconds nuo 1970-01-01 00:00:00
+        postTimestamp: 1600900006359,              // miliseconds nuo 1970-01-01 00:00:00
         content: {
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sapiente nemo architecto. Alias, error ipsa?',
             photos: [
@@ -111,13 +118,14 @@ const posts = [
         }
     },
     {
+        id: 8,
         author: {
             photo: 'ip-man.jpg',
             name: 'Ip',
             lastname: 'Man',
             link: 'ip-man'
         },
-        postTimestamp: 1594300487052,             // miliseconds nuo 1970-01-01 00:00:00
+        postTimestamp: 1550900006359,              // miliseconds nuo 1970-01-01 00:00:00
         content: {
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sapiente nemo architecto. Alias, error ipsa?',
             photos: [
@@ -129,13 +137,14 @@ const posts = [
         }
     },
     {
+        id: 9,
         author: {
             photo: 'optimus-prime.png',
             name: 'Optimus',
             lastname: 'Prime',
             link: 'optimus-prime'
         },
-        postTimestamp: 1584300487052,             // miliseconds nuo 1970-01-01 00:00:00
+        postTimestamp: 1450900006359,             // miliseconds nuo 1970-01-01 00:00:00
         content: {
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sapiente nemo architecto. Alias, error ipsa?',
             photos: [
@@ -150,38 +159,41 @@ const posts = [
         }
     },
     {
+        id: 10,
         author: {
             photo: 'homer-simpson.jpg',
             name: 'Homer',
             lastname: 'Simpson',
             link: 'homer-simpson'
         },
-        postTimestamp: 1585402689570,             // miliseconds nuo 1970-01-01 00:00:00
+        postTimestamp: 1450900006359,             // miliseconds nuo 1970-01-01 00:00:00
         content: {
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit'
         }
     },
     {
+        id: 11,
         author: {
             photo: 'wonder-woman.jpg',
             name: 'Wonder',
             lastname: 'Woman',
             link: 'wonder-woman'
         },
-        postTimestamp: 1495402689570,             // miliseconds nuo 1970-01-01 00:00:00
+        postTimestamp: 450900006359,             // miliseconds nuo 1970-01-01 00:00:00
         content: {
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
             background: 'red'
         }
     },
     {
+        id: 12,
         author: {
             photo: 'wonder-woman.jpg',
             name: 'Wonder',
             lastname: 'Woman',
             link: 'wonder-woman'
         },
-        postTimestamp: 1495402689570,             // miliseconds nuo 1970-01-01 00:00:00
+        postTimestamp: 350900006359,             // miliseconds nuo 1970-01-01 00:00:00
         content: {
             text: 'Lorem ipsum',
             background: 'orange'
