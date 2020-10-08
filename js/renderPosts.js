@@ -33,21 +33,22 @@ function renderPosts(data){
             //finding closed father element .content
             const contentDOM = seeMore.closest('.content');
             //adding class on the element
-            contentDOM.classList.toggle('show');
+            contentDOM.classList.add('show');
         });
     }
 
-    // //Looping through each found see-more element to remove class
-    // for (let j = 0; j < allSeeMoreDOM.length; j++){
-    //     const seeMore = allSeeMoreDOM[j];
+    const allSeeLessDOM = document.querySelectorAll(".post .see-less");
+    //Looping through each found see-more element to remove class
+    for (let j = 0; j < allSeeLessDOM.length; j++){
+        const seeLess = allSeeLessDOM[j];
 
-    //     seeMore.addEventListener('click', function () {
-    //         //finding closed father element .content
-    //         const contentDOM = seeMore.closest('.content');
-    //         //adding class on the element
-    //         contentDOM.classList.remove('show');
-    //     });
-    // }
+        seeLess.addEventListener('click', function () {
+            //finding closed father element .content
+            const contentDOM = seeLess.closest('.content');
+            //adding class on the element
+            contentDOM.classList.remove('show');
+        });
+    }
     
 
 } 
