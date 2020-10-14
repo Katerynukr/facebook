@@ -6,7 +6,7 @@ function ajax(callback, href) {
             callback(data);
         }
     };
-  const URL = "https://github.com/Katerynukr/facebook" + href;
+  const URL = "https://github.com/Katerynukr/facebook/js/data.json" ;
   xhttp.open("GET", URL, true);
   xhttp.send();
 }
